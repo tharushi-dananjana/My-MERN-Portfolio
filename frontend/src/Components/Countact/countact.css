@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.countact {
+  max-width: 600px;
+  padding: 60px 20px 20px;
+  margin: 5% auto;
+  background-color: #fff;
+  box-shadow: 4px 9px 33px rgba(0, 0, 0, 0.768);
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+.contact-title {
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+.contact-title1 {
+  color: rgb(255, 255, 255);
+}
+
+.contact-title2 {
+  color: rgb(5, 170, 170);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  align-self: flex-start;
+  color: #555;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="Subject"],
+textarea {
+  width: 95.5%;
+  padding: 10px;
+  margin-bottom: 3%;
+  border: 1px solid #878585;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="Subject"]:hover,
+textarea:hover {
+  border: 2px solid black;
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  background-color: rgb(1, 150, 150);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.submit-btn i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(1, 83, 83);
+  transform: scale(1.1);
+  color: white;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+  font-size: 17px;
+}
+
+.hBody {
+  background-color: rgba(2, 17, 14, 0.686);
+  padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .countact {
+    margin: 5%;
+    width: auto;
+    padding: 7% 5% 5%;
+  }
+
+  .contact-title {
+    font-size: 20px;
+    margin-bottom: 8%;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="Subject"],
+  textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 90%;
+    font-size: 18px;
+  }
+}
