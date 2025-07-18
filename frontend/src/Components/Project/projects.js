@@ -9,29 +9,28 @@ import projectImage5 from './img/itp.jpg';
 import projectImage6 from './img/mad.jpg';
 import projectImage7 from './img/oop.jpg';
 import projectImage8 from './img/rukshanferniture.jpg';
-import projectImage9 from './img/shareme.jpg';
-import projectImage10 from './img/ITPM.jpg';
+import projectImage10 from './img/ITPM.png';
 
 const projectData = [
     {
         id: 1,
         title: "Portfolio",
         technology: "MERN Stack",
-        url: "https://github.com/AMunasinghe2001/My_PortFolio",
+        url: "https://github.com/tharushi-dananjana/My-MERN-Portfolio.git",
         image: projectImage1,
     },
     {
         id: 2,
-        title: "Hottel Booking",
+        title: "Boat Safari Management System",
         technology: "PHP,JavaScript,CSS,SQL",
-        url: "https://github.com/AMunasinghe2001/hotelBookingSystem",
+        url: "https://github.com/tharushi-dananjana/IWT-project.git",
         image: projectImage2,
     },
     {
         id: 3,
-        title: "Task Master App",
+        title: "House Design",
         technology: "Kotlin",
-        url: "https://github.com/AMunasinghe2001/TaskMasterApp",
+        url: "https://github.com/tharushi-dananjana/house-design.git",
         image: projectImage3,
     },
     {
@@ -43,39 +42,33 @@ const projectData = [
     },
     {
         id: 5,
-        title: "Furniture Manage Web App",
+        title: "Modern Portfolio",
         technology: "MERN Stack",
-        url: "https://github.com/it22606006/Rukshan-Furniture",
+        url: "https://github.com/tharushi-dananjana/Tharushi-Profile.git",
         image: projectImage5,
     },
     {
         id: 6,
-        title: "Pet Care App",
-        technology: "Kotlin",
-        url: "",
+        title: "Simple Portfolio",
+        technology: "Html , CSS , JS",
+        url: "https://github.com/tharushi-dananjana/protfolio.git",
         image: projectImage6,
     },
     {
         id: 7,
-        title: "Travel Booking Web",
+        title: "My Simple Web App",
         technology: "Java,JavaScript,CSS,SQL",
         url: "https://github.com/AMunasinghe2001/Book-Tour-website-OOP",
         image: projectImage7,
     },
     {
         id: 8,
-        title: "Rukshan Furniture Web",
+        title: "E Channelling System",
         technology: "MERN Stack,Vite+React",
-        url: "https://github.com/Bashitha-Weerapperuma/Rukshan-furniture",
+        url: "https://github.com/tharushi-dananjana/EChannelingSystem.git",
         image: projectImage8,
     },
-    {
-        id: 9,
-        title: "Share me Web",
-        technology: "React,Java",
-        url: "https://github.com/oshanLahiru0307/Share_me-App",
-        image: projectImage9,
-    },
+    
     {
         id: 10,
         title: "Home Stock Web App",
@@ -129,7 +122,7 @@ const Project = () => {
                                 <h2 className='PCCtitle'>Technology: {project.technology}</h2>
                                 <div className='url'>
                                     <a href={project.url} target="_blank" rel="noopener noreferrer">
-                                        <FaLink size={26} />
+                                        <FaLink size={20} />
                                     </a>
                                 </div>
                             </div>

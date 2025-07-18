@@ -10,7 +10,7 @@ function Footer() {
     <div>
       <footer>
         <div className="footerHead">
-          <h2>Anushanga Munasinghe</h2>
+          <h2>Tharushi Dananjana</h2>
         </div>
 
         <div className="footerHead">
@@ -28,7 +28,7 @@ function Footer() {
             <a href=" https://wa.me/qr/PNKZI5JKCMJKK1" data-popup="WhatsApp">
               <img src={watsapp} alt="watsapp" />
             </a>
-            <a href="https://github.com/AMunasinghe2001" data-popup="GitHub">
+            <a href="https://github.com/tharushi-dananjana" data-popup="GitHub">
               <img src={github} alt="github" />
             </a>
             <a href="https://www.linkedin.com/in/anushanga-kaushan-munasinghe-9b51882a2/" data-popup="LinkedIn">
@@ -38,8 +38,8 @@ function Footer() {
         </div>
         <div className="footerBottom">
           <p>
-            Copyright &copy;2023; Designed by{" "}
-            <span className="designer">Anushanga Munasinghe</span>
+            Copyright &copy;2025; Designed by{" "}
+            <span className="designer">Tharushi Dananjana</span>
           </p>
         </div>
       </footer>

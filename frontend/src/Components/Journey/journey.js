@@ -24,22 +24,21 @@ const Timeline = () => {
     {
       id: 3,
       title: "Bachelor of Information Technology",
-      duration: "2022 - Present",
+      duration: "2023 - Present",
       institution: "Sri Lanka Institute of Information Technology",
       logo: sliit,
     },
     {
       id: 2,
-      title: "Information Communications Technology",
-      duration: "2017 - 2021",
-      institution: "H/Ruhunu Vijayaba National College",
+      title: "Biological Science",
+      duration: "2018 - 2021",
+      institution: "H/Tangalle Girls college",
       logo: rvc,
     },
     {
       id: 1,
-      title: "Information Communications Technology",
-      duration: "2012 - 2017",
-      institution: "H/Tangalle National Boys School",
+      title: "Primary Education",
+      institution: "H/Tangalle Model Primary School",
       logo: tnbs,
     },
     

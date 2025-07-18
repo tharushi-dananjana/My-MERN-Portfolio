@@ -56,7 +56,7 @@ function Home() {
           <br />
 
           <div className="name animated-text">
-            <h1>Anushanga Munasinghe</h1>
+            <h1>Tharushi Dananjana</h1>
             <br />
           </div>
           <h2 className="homeh2 animated-text">And I'm</h2>

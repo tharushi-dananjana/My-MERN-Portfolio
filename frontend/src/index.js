@@ -1,14 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // ✅ මේක වෙනස් වෙනවා
 import './index.css';
 import App from './App';
-import {BrowserRouter}from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
+// ✅ React 18 syntax
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <BrowserRouter>
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-  </BrowserRouter>,
-  document.getElementById('root')
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>
 );

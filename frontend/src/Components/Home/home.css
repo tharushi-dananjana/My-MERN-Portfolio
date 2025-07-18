@@ -7,6 +7,8 @@
 .pic img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 50% / 50%;
 }
 .pic {
   position: absolute;
@@ -23,7 +25,7 @@
   bottom: 0;
   display: flex;
   height: 90%; /* Set a constant height for large screens */
-  background-color: #ffffff;
+  background-color: #fbf9f9;
   background-image: linear-gradient(
     to left,
     rgba(43, 105, 97, 0),
