@@ -1,0 +1,165 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+.header {
+  margin: 8% 5% 20px;
+  z-index: 1;
+}
+.pic img {
+  max-width: 100%;
+  height: auto;
+}
+.pic {
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  margin-top: 5%;
+  width: 398px;
+  margin-right: 5%;
+  height: auto;
+}
+.cover {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  display: flex;
+  height: 90%; /* Set a constant height for large screens */
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    to left,
+    rgba(43, 105, 97, 0),
+    rgba(43, 105, 97, 0.679)
+  );
+  overflow: hidden; /* Prevent content from overflowing */
+  position: relative;
+}
+.job {
+  font-size: 30px;
+  color: #0296a0;
+  font-weight: bold;
+  margin-right: -6px;
+  text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
+  min-height: 55px; /* Adjust as needed to match the height of one line of text */
+  white-space: nowrap; /* Prevent job text from wrapping */
+}
+.cursor {
+  display: inline-block;
+  background-color: #0296a0;
+  width: 0px;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated-text {
+  animation: slideIn 1s ease-out forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.name {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 4px 9px 13px rgba(0, 0, 0, 0.5);
+}
+
+.homeh2{
+  text-shadow: 4px 9px 13px rgba(63, 62, 62, 0.5);
+}
+
+.homeAbout {
+  font-size: 20px;
+  color: #1f1f1f;
+  font-weight: bold;
+  max-width:600px;
+}
+.header {
+  color: #ffffff;
+  border: 10px;
+  border-color: #0296a0;
+}
+.btnCV {
+  background-color: #0296a0;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
+  margin: 20px;
+  padding: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border: none;
+}
+.btnCV a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.btnCV a:hover {
+  color: white;
+}
+.btnCV i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.btnCV:hover {
+  background-color: #032c2f;
+  color: white;
+  border: 3px;
+}
+@media (max-width: 768px) {
+  .cover {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .pic {
+    display: none; /* Hide the .pic container */
+  }
+
+  .pic img {
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 16px;
+    color: #1f1f1f;
+  }
+
+  .homeh2{
+    color: #1f1f1f;
+  }
+
+  .job {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .homeAbout {
+    font-size: 18px; /* Adjust about text size for smaller screens */
+  }
+
+  .btnCV {
+    font-size: 14px; /* Adjust button text size for smaller screens */
+  }
+  
+}

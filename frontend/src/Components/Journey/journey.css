@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #041716ba;
+  padding: 50px 20px;
+  margin-top: 100px;
+}
+
+.timeline-title {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.timeline-title1 {
+  color: #ffffff;
+}
+
+.timeline-title2 {
+  color: aqua;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1500px;
+  width: 100%;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  min-height: 150px; /* Ensure the items have a minimum height */
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 14px;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+
+.timeline-item.right .timeline-img {
+  left: -15px;
+  right: auto;
+}
+
+.timeline-item.right {
+  left: 50%;
+  justify-content: flex-start;
+}
+
+.timeline-content {
+  background: #fff;
+  background-image: linear-gradient(
+    to left,
+    rgba(43, 105, 97, 0.268),
+    rgba(49, 95, 88, 0.496)
+  );
+  color: #032c2f;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 900px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.timeline-logo {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .timeline-content {
+    width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 60px;
+    padding-right: 5px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+    justify-content: flex-start;
+  }
+
+  .timeline-content {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+
+  .timeline-img {
+    left: -14.5px;
+    right: auto;
+  }
+
+  .timeline::after {
+    left: 57px;
+    margin-left: 0;
+  }
+}
