@@ -16,7 +16,7 @@
   }
   
   .skill-percentage {
-    background-image: linear-gradient(to right, rgb(136, 255, 255), rgb(67, 174, 174));
+    background-image: linear-gradient(to right, rgb(42, 114, 90), rgb(30, 101, 58));
     height: 20px;
     transition: width 0.3s ease-in-out;
   }

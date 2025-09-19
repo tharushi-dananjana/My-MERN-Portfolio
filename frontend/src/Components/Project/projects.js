@@ -1,22 +1,20 @@
 import React from 'react';
 import './projects.css';
 import { FaLink } from 'react-icons/fa';
-import projectImage1 from './img/portfolio.jpg';
+import projectImage1 from './img/userimage.jpg';
 import projectImage2 from './img/hotelbook.jpg';
-import projectImage3 from './img/todo app.jpg';
-import projectImage4 from './img/game app.jpg';
-import projectImage5 from './img/itp.jpg';
-import projectImage6 from './img/mad.jpg';
-import projectImage7 from './img/oop.jpg';
-import projectImage8 from './img/rukshanferniture.jpg';
-import projectImage10 from './img/ITPM.png';
+import projectImage3 from './img/hotelapp.jpg';
+import projectImage4 from './img/foodapp.jpg';
+import projectImage5 from './img/mern.jpg';
+import projectImage6 from './img/simpleportfolio.jpg';
+import projectImage7 from './img/channelling.jpg';
 
 const projectData = [
     {
         id: 1,
-        title: "Portfolio",
+        title: "User Management",
         technology: "MERN Stack",
-        url: "https://github.com/tharushi-dananjana/My-MERN-Portfolio.git",
+        url: "https://github.com/tharushi-dananjana/User-Management.git",
         image: projectImage1,
     },
     {
@@ -28,16 +26,16 @@ const projectData = [
     },
     {
         id: 3,
-        title: "House Design",
+        title: "Hotel App",
         technology: "Kotlin",
         url: "https://github.com/tharushi-dananjana/house-design.git",
         image: projectImage3,
     },
     {
         id: 4,
-        title: "Game App",
+        title: "Food Delivery App",
         technology: "Kotlin",
-        url: "https://github.com/AMunasinghe2001/Game_App",
+        url: "https://github.com/tharushi-dananjana/Food_Delivery_App.git",
         image: projectImage4,
     },
     {
@@ -56,25 +54,10 @@ const projectData = [
     },
     {
         id: 7,
-        title: "My Simple Web App",
-        technology: "Java,JavaScript,CSS,SQL",
-        url: "https://github.com/AMunasinghe2001/Book-Tour-website-OOP",
-        image: projectImage7,
-    },
-    {
-        id: 8,
         title: "E Channelling System",
         technology: "MERN Stack,Vite+React",
         url: "https://github.com/tharushi-dananjana/EChannelingSystem.git",
-        image: projectImage8,
-    },
-    
-    {
-        id: 10,
-        title: "Home Stock Web App",
-        technology: "MERN Stack",
-        url: "https://github.com/oshanLahiru0307/ITPM_Project",
-        image: projectImage10,
+        image: projectImage7,
     },
 
 ];

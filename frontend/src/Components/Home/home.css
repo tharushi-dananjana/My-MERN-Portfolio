@@ -28,15 +28,15 @@
   background-color: #fbf9f9;
   background-image: linear-gradient(
     to left,
-    rgba(43, 105, 97, 0),
-    rgba(43, 105, 97, 0.679)
+    rgb(42, 128, 91),
+    rgb(232, 237, 237)
   );
   overflow: hidden; /* Prevent content from overflowing */
   position: relative;
 }
 .job {
   font-size: 30px;
-  color: #0296a0;
+  color: #080808;
   font-weight: bold;
   margin-right: -6px;
   text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
