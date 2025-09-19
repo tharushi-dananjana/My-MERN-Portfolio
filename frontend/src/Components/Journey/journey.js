@@ -1,7 +1,7 @@
 import React from "react";
 import "./journey.css";
-import rvc from "./img/rvc.png";
-import tnbs from "./img/tnbs.png";
+import tbv from "./img/balika.png";
+import tmp from "./img/primary.png";
 import sliit from "./img/sliit.png";
 import uom from "./img/uom.png";
 
@@ -33,13 +33,13 @@ const Timeline = () => {
       title: "Biological Science",
       duration: "2018 - 2021",
       institution: "H/Tangalle Girls college",
-      logo: rvc,
+      logo: tbv,
     },
     {
       id: 1,
       title: "Primary Education",
       institution: "H/Tangalle Model Primary School",
-      logo: tnbs,
+      logo: tmp,
     },
     
   ];

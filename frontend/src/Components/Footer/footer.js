@@ -22,16 +22,16 @@ function Footer() {
 
         <div className="footerContainer">
           <div className="socialIcons">
-            <a href="https://web.facebook.com/anushanga.kawshan.1" data-popup="Facebook">
+            <a href="https://www.facebook.com/tharushi.dananjana.507239?mibextid=ZbWKwL " data-popup="Facebook">
               <img src={facebook} alt="facebook" />
             </a>
-            <a href=" https://wa.me/qr/PNKZI5JKCMJKK1" data-popup="WhatsApp">
+            <a href=" 0705823421" data-popup="WhatsApp">
               <img src={watsapp} alt="watsapp" />
             </a>
             <a href="https://github.com/tharushi-dananjana" data-popup="GitHub">
               <img src={github} alt="github" />
             </a>
-            <a href="https://www.linkedin.com/in/anushanga-kaushan-munasinghe-9b51882a2/" data-popup="LinkedIn">
+            <a href="http://www.linkedin.com/in/tharushi-dananjana" data-popup="LinkedIn">
               <img src={linkin} alt="linkin" />
             </a>
           </div>
