@@ -1,78 +1,32 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-.header {
-  margin: 8% 5% 20px;
-  z-index: 1;
-}
-.pic img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 50% / 50%;
-}
-.pic {
-  position: absolute;
-  right: 0;
-  z-index: 0;
-  margin-top: 5%;
-  width: 398px;
-  margin-right: 5%;
-  height: auto;
-}
+/* Cover Section */
 .cover {
-  margin: 0;
-  padding: 0;
-  bottom: 0;
   display: flex;
-  height: 90%; /* Set a constant height for large screens */
+  flex-direction: row;
+  align-items: center; /* Vertical center */
+  justify-content: center; /* Center horizontally */
+  gap: 80px; /* Space between text and image */
+  height: 90vh; /* Full viewport height */
   background-color: #fbf9f9;
-  background-image: linear-gradient(
-    to left,
-    rgb(42, 128, 91),
-    rgb(232, 237, 237)
-  );
-  overflow: hidden; /* Prevent content from overflowing */
+  background-image: linear-gradient(to left, rgb(42, 128, 91), rgb(232, 237, 237));
+  overflow: hidden;
+  padding: 20px;
   position: relative;
 }
-.job {
-  font-size: 30px;
-  color: #080808;
-  font-weight: bold;
-  margin-right: -6px;
-  text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
-  min-height: 55px; /* Adjust as needed to match the height of one line of text */
-  white-space: nowrap; /* Prevent job text from wrapping */
+
+/* Header and Text */
+.header {
+  margin: 0;
+  z-index: 1;
+  color: #ffffff;
+  max-width: 600px;
 }
-.cursor {
-  display: inline-block;
-  background-color: #0296a0;
-  width: 0px;
-  animation: blink 0.7s infinite;
+
+.homeh2 {
+  text-shadow: 4px 9px 13px rgba(63, 62, 62, 0.5);
 }
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.animated-text {
-  animation: slideIn 1s ease-out forwards;
-}
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 .name {
   color: #ffffff;
   font-weight: bold;
@@ -80,66 +34,125 @@
   text-shadow: 4px 9px 13px rgba(0, 0, 0, 0.5);
 }
 
-.homeh2{
-  text-shadow: 4px 9px 13px rgba(63, 62, 62, 0.5);
+.job {
+  font-size: 30px;
+  color: #080808;
+  font-weight: bold;
+  margin-right: -6px;
+  text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
+  min-height: 55px;
+  white-space: nowrap;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #0296a0;
+  width: 0px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animated-text {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .homeAbout {
   font-size: 20px;
   color: #1f1f1f;
   font-weight: bold;
-  max-width:600px;
+  max-width: 600px;
 }
-.header {
-  color: #ffffff;
-  border: 10px;
-  border-color: #0296a0;
-}
+
 .btnCV {
   background-color: #0296a0;
   color: #ffffff;
   font-weight: bold;
   font-size: 15px;
   text-shadow: 4px 9px 13px rgba(10, 10, 10, 0.768);
-  margin: 20px;
-  padding: 13px;
+  margin: 20px 0;
+  padding: 13px 25px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.5s;
   border: none;
 }
+
 .btnCV a {
   color: #ffffff;
   text-decoration: none;
 }
+
 .btnCV a:hover {
   color: white;
 }
+
 .btnCV i {
   margin-left: 10px;
   font-size: 18px;
 }
+
 .btnCV:hover {
   background-color: #032c2f;
   color: white;
-  border: 3px;
 }
-@media (max-width: 768px) {
+
+/* Profile Picture */
+.pic {
+  width: 450px; /* Larger image */
+  height: auto;
+  margin: 0 auto;
+  flex-shrink: 0;
+  z-index: 0;
+  transform: translateY(-10px); /* Slight floating effect */
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 12px 25px rgba(0,0,0,0.3); /* Floating shadow */
+}
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
   .cover {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
+    gap: 40px;
   }
 
   .header {
     text-align: center;
+    max-width: 90%;
   }
 
   .pic {
-    display: none; /* Hide the .pic container */
+    width: 350px;
+    transform: none;
   }
 
-  .pic img {
-    margin: 0 auto;
+  .job {
+    font-size: 24px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .pic {
+    width: 250px;
   }
 
   .name {
@@ -147,21 +160,22 @@
     color: #1f1f1f;
   }
 
-  .homeh2{
+  .homeh2 {
     color: #1f1f1f;
   }
 
   .job {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
   }
 
   .homeAbout {
-    font-size: 18px; /* Adjust about text size for smaller screens */
+    font-size: 18px;
+    text-align: center;
   }
 
   .btnCV {
-    font-size: 14px; /* Adjust button text size for smaller screens */
+    font-size: 14px;
+    padding: 10px 20px;
   }
-  
 }
