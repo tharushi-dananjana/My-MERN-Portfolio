@@ -1,52 +1,52 @@
 import React from "react";
 import "./certificate.css";
-import certificate1 from "./img/python.png";
+import certificate1 from "./img/webdesign.png";
 import certificate2 from "./img/stage1.png";
 import certificate3 from "./img/stage2.png";
-import certificate4 from "./img/webdesign.png";
+import certificate4 from "./img/python.png";
 import certificate5 from "./img/ai.png"; // New certificate 5
 import certificate6 from "./img/pm.png";   // New certificate 6
 
 const certificateData = [
   {
     id: 1,
-    title: "AWS Cloud Practitioner",
-    issuer: "Amazon Web Services",
+    title: "Web Design for Beginners",
+    issuer: "university of Moratuwa",
     date: "March 2024",
     image: certificate1,
   },
   {
     id: 2,
-    title: "SLIIT AI Course – Stage 1",
+    title: "SLIIT AI Course Stage 1",
     issuer: "SLIIT",
     date: "June 2024",
     image: certificate2,
   },
   {
     id: 3,
-    title: "HackerRank Problem Solving",
-    issuer: "HackerRank",
+    title: "SLIIT AI Course Stage 2",
+    issuer: "SLIIT",
     date: "August 2024",
     image: certificate3,
   },
   {
     id: 4,
-    title: "Responsive Web Design",
-    issuer: "freeCodeCamp",
+    title: "Python for Beginners",
+    issuer: "University of Moratuwa",
     date: "January 2025",
     image: certificate4,
   },
   {
     id: 5,
-    title: "Modern MERN Stack Project",
-    issuer: "Self-Learning",
+    title: "AI for Beginners",
+    issuer: "Hp-Life",
     date: "February 2025",
     image: certificate5,
   },
   {
     id: 6,
-    title: "AI Fundamentals Course",
-    issuer: "Coursera",
+    title: "Agile Project Management",
+    issuer: "Hp-Life",
     date: "April 2025",
     image: certificate6,
   },

@@ -55,7 +55,7 @@ const projectData = [
     {
         id: 7,
         title: "E Channelling System",
-        technology: "MERN Stack,Vite+React",
+        technology: "Java, JavaScript, MySQL",
         url: "https://github.com/tharushi-dananjana/EChannelingSystem.git",
         image: projectImage7,
     },

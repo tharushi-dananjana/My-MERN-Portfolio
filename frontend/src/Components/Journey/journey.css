@@ -117,13 +117,20 @@ body {
   width: 900px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  display: flex; /* Added */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
 }
 
 .timeline-logo {
-  width: 45px;
-  height: 45px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
   margin-bottom: 10px;
+  display: block;
 }
+
 
 @media (max-width: 1024px) {
   .timeline-content {

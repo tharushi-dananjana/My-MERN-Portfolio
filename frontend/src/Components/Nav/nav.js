@@ -39,7 +39,7 @@ function Nav() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          {["home", "about", "journey", "skills", "project", "services", "contact"].map((link) => (
+          {["home", "about", "journey", "skills", "project","contact"].map((link) => (
             <li key={link}>
               <a
                 href={`#${link}`}
@@ -67,7 +67,7 @@ function Nav() {
           ref={dropdownRef}
           className="md:hidden flex flex-col bg-white shadow-lg px-6 py-4 space-y-4"
         >
-          {["home", "about", "journey", "skills", "project", "services", "contact"].map((link) => (
+          {["home", "about", "journey", "skills", "project", "contact"].map((link) => (
             <li key={link}>
               <a
                 href={`#${link}`}

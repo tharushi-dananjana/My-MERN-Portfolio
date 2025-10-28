@@ -8,7 +8,6 @@ import About from "./Components/About/about";
 import Journey from "./Components/Journey/journey";
 import Skills from "./Components/Skills/CertificatePage.js";
 import Project from "./Components/Project/projects.js";
-import Services from "./Components/Services/services";
 import Countact from "./Components/Countact/countact";
 import Login from "./Components/Login/login.js";
 import AddProject from "./Components/AddProject/addproject";
@@ -24,7 +23,6 @@ function App() {
         <Journey />
         <Skills />
         <Project />
-        <Services />
         <Countact />
       </div>
 
@@ -35,7 +33,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/journey" element={<Journey />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/services" element={<Services />} />
           <Route path="/countact" element={<Countact />} />
           <Route path="/footer" element={<Footer />} />
           <Route path="/project" element={<Project />} /> */}
