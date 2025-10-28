@@ -2,7 +2,7 @@ import React from 'react';
 import './projects.css';
 import { FaLink } from 'react-icons/fa';
 import projectImage1 from './img/userimage.jpg';
-import projectImage2 from './img/hotelbook.jpg';
+import projectImage2 from './img/safari.jpg';
 import projectImage3 from './img/hotelapp.jpg';
 import projectImage4 from './img/foodapp.jpg';
 import projectImage5 from './img/mern.jpg';
