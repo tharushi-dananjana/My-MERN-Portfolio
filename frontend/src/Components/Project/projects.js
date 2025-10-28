@@ -12,9 +12,9 @@ import projectImage7 from './img/channelling.jpg';
 const projectData = [
     {
         id: 1,
-        title: "User Management",
+        title: "Ayurveda Clinic System",
         technology: "MERN Stack",
-        url: "https://github.com/tharushi-dananjana/User-Management.git",
+        url: "https://github.com/tharushi-dananjana/Final-ITP.git",
         image: projectImage1,
     },
     {
